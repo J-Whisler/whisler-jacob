@@ -1,0 +1,82 @@
+.nav {
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 1fr;
+    align-items: center;
+    .nav__logo {
+        display: flex;
+        align-items: center;
+        .nav__logoInitials {
+            margin-right: -0.8vw;
+            .nav__logoInitialsLink {
+                text-decoration: none;
+                color: var(--primary-color);
+                img {
+                    width: 11vw;
+                    object-fit: contain;
+                }
+            }
+        }
+        .nav__logoWords {
+            color: var(--accent-color);
+            line-height: 4.8vh;
+            .nav__logoWords1 {
+                font-family: var(--accent-font);
+                letter-spacing: 0.7vw;
+                font-size: 2.6vw;
+            }
+            .nav__logoWords2 {
+                font-family: var(--secondary-font);
+                letter-spacing: 0.25vw;
+                font-size: 2.3vw;
+                // text-decoration: overline;
+            }
+        }
+    }
+    .nav__links {
+        display: flex;
+        justify-content: space-evenly;
+        .nav__linksLink {
+            text-decoration: none;
+            color: var(--accent-color);
+            font-size: 2vw;
+            font-family: var(--primary-font);
+            font-weight: 700;
+            letter-spacing: 0.5vw;
+            transition: all 0.2s ease;
+            &:hover {
+                text-shadow: -3px 3px 5px var(--secondary-color);
+
+            }
+        }
+        .nav__linksDivider {
+            border: 1px solid var(--accent-color);
+            margin: 1vh 0;
+            border-radius: 10vw;
+            box-shadow: -2px 2px 1px var(--secondary-color);
+        }
+    }
+    .nav__buttons {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: center;
+        .nav__buttonsLink {
+            text-decoration: none;
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+            font-family: var(--secondary-font);
+            font-size: 1.8vw;
+            letter-spacing: 0.3vw;
+            padding: 1vh 2vw;
+            border: 2px solid var(--primary-color);
+            border-radius: 2vw;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: var(--primary-color);
+                border: 2px solid var(--secondary-color);
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
