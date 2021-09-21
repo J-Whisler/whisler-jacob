@@ -23,7 +23,19 @@ const Hero = () => {
         </div>
         <div className="hero__topRight">Top Right</div>
       </div>
-      <div className="hero__bottom">Hero Bottom</div>
+      <div className="hero__bottom">
+        <div className="hero__bottomLeft">
+          <i className="fas fa-handshake"></i>
+          <h4>Check out my Social Media's!</h4>
+          <div></div>
+        </div>
+        <div className="hero__bottomRight">
+          <i className="fab fa-linkedin-in"></i>
+          <i className="fab fa-github"></i>
+          <i className="fab fa-instagram"></i>
+          <i className="fab fa-twitter"></i>
+        </div>
+      </div>
     </div>
   );
 };
