@@ -12,7 +12,7 @@
         padding: 3vh 2vw;
         .hero__topLeft {
             // border: 2px solid red;
-
+            text-shadow: 0px 0px 8px var(--primary-color);
             p {
                 font-family: var(--secondary-font);
                 color: var(--secondary-color);
@@ -28,6 +28,11 @@
                 color: var(--accent-color);
                 font-size: 5vw;
                 font-weight: 700;
+                // letter-spacing: 0.1vw;
+                span {
+                    text-shadow: 0px 0px 8px var(--primary-color), 0px 0px 120px var(--secondary-color), 0px 0px 220px var(--secondary-color);
+
+                }
             }
             h5 {
                 font-family: var(--primary-font);
@@ -35,6 +40,7 @@
                 font-size: 2vw;
                 width: 60%;
                 font-weight: 400;
+                letter-spacing: 0.05vw;
             }
             .hero__topLeftWork {
                 background: rgba(0,0,0,0.5);
@@ -48,6 +54,10 @@
                 align-items: center;
                 font-family: var(--primary-font);
                 font-size: 1.7vw;
+                h4 {
+                    letter-spacing: 0.03vw;
+                }
+                // letter-spacing: 0.1vw;
                 .hero__topLeftWorkLink {
                     text-decoration: none;
                     justify-self: end;
@@ -57,9 +67,14 @@
                     font-size: 2.2vw;
                     border-radius: 2vw;
                     padding: 0.7vh 1.2vw;
+                    text-shadow: none;
+                    // letter-spacing: -0.2vw;
                     box-shadow: 0px 0px 8px var(--primary-color), 0px 0px 120px var(--secondary-color), 0px 0px 220px var(--secondary-color);
+                    transition: 0.3s all ease-in-out;
+                   
                    &:hover {
-
+                        background: var(--primary-color);
+                        color: var(--secondary-color);
                    }
                 }
             }

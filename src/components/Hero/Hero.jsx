@@ -10,7 +10,9 @@ const Hero = () => {
           <p>
             <i className="fas fa-map-pin"></i>Cleveland, OH
           </p>
-          <h2>Hi! My name is Jacob.</h2>
+          <h2>
+            <span>Hi!</span> My name is Jacob.
+          </h2>
           <h5>I am a Front-End Web Developer and Designer.</h5>
           <div className="hero__topLeftWork">
             <h4>Click here to check out my work!</h4>
