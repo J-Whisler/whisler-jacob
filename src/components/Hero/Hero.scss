@@ -13,12 +13,13 @@
         .hero__topLeft {
             // border: 2px solid red;
             text-shadow: 0px 0px 8px var(--primary-color);
+            // padding-top: 1vh;
             p {
                 font-family: var(--secondary-font);
                 color: var(--secondary-color);
                 font-size: 1.4vw;
                 letter-spacing: 0.1vw;
-                margin-bottom: -2vh;
+                margin-bottom: -1vh;
                 i {
                     margin-right: 0.5vw;
                 }
@@ -28,6 +29,7 @@
                 color: var(--accent-color);
                 font-size: 5vw;
                 font-weight: 700;
+                margin-bottom: -1vh;
                 // letter-spacing: 0.1vw;
                 span {
                     text-shadow: 0px 0px 8px var(--primary-color), 0px 0px 120px var(--secondary-color), 0px 0px 220px var(--secondary-color);
@@ -41,12 +43,14 @@
                 width: 60%;
                 font-weight: 400;
                 letter-spacing: 0.05vw;
+                // margin-bottom: 1vh;
+
             }
             .hero__topLeftWork {
                 background: rgba(0,0,0,0.5);
                 background: linear-gradient(to bottom right, rgba(199, 199, 199, 0.35) 0%, rgba(105, 105, 105, 0.15) 100%);
                 padding: 1vh 0.6vw 1vh 1.2vw;
-                margin-top: 1.6vw;
+                margin-top: 3.5vw;
                 width: 80%;
                 border-radius: 2vw;
                 display: flex;
@@ -69,7 +73,7 @@
                     padding: 0.7vh 1.2vw;
                     text-shadow: none;
                     // letter-spacing: -0.2vw;
-                    box-shadow: 0px 0px 8px var(--primary-color), 0px 0px 120px var(--secondary-color), 0px 0px 220px var(--secondary-color);
+                    box-shadow: 0px 0px 120px var(--secondary-color), 0px 0px 220px var(--secondary-color);
                     transition: 0.3s all ease-in-out;
                    
                    &:hover {
@@ -80,7 +84,49 @@
             }
         }
         .hero__topRight {
-            // border: 2px solid green;
+            // border: 2px solid blue;
+            display: grid;
+            grid-template-columns: 8fr 0.2fr;
+            text-align: center;
+            
+            img {
+                // border: 2px solid white;
+                width: 143%;
+                height: 100%;
+              
+            }
+            .hero__topRightResume {
+                display: flex;
+                flex-direction: column;
+                width: 12vw;
+                height: 12vh;
+                background: linear-gradient(to bottom right, rgba(199, 199, 199, 0.35) 0%, rgba(105, 105, 105, 0.15) 100%);
+                border-radius: 2vw;
+                padding: 1vh 1vw;
+                align-items: center;
+                justify-content: space-around;
+                p {
+                    font-family: var(--primary-font);
+                    font-size: 1.3vw;
+                }
+                a {
+                    background: var(--secondary-color);
+                    color: var(--primary-color);
+                    text-decoration: none;
+                    font-family: var(--secondary-font);
+                    width: 8vw;
+                    border-radius: 1vw;
+                    font-size: 1.5vw;
+                    padding: 0.5vh 0.2vw;
+                    box-shadow: 0px 0px 100px var(--secondary-color), 0px 0px 125px var(--secondary-color);
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background: var(--primary-color);
+                        color: var(--secondary-color);
+                    }
+                }
+            }
+           
         }
     }
     .hero__bottom {
@@ -116,13 +162,23 @@
             }
             div {
                 border: 2px solid var(--accent-color);
-                border-radius: 2vw;         
+                border-radius: 2vw;    
+                box-shadow: 0px 0px 10px var(--primary-color), 0px 0px 50px var(--secondary-color), 0px 0px 70px var(--secondary-color);
+     
             }
         }
         .hero__bottomRight {
             display: flex;
             align-items: center;
             margin-left: 2vw;
+            p {
+                color: var(--accent-color);
+                font-family: var(--primary-font);
+                font-size: 1.4vw;
+                letter-spacing: 0.1vw;
+                // display: none;
+                transition: 0.5s ease-in-out;
+            }
             i {
                 margin: 0 1.5vw;
                 font-size: 1.7vw;
@@ -132,7 +188,14 @@
                 color: var(--primary-color);
                 border-radius: 0.3vw;
                 cursor: pointer;
+                transition: 0.3s all ease-in-out;
+                &:hover {
+                    color: var(--secondary-color);
+                    background: var(--primary-color);
+                    border: 2px solid var(--primary-color);
+                }
             }
+                
         }
 
     }

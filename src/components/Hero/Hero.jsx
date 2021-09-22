@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Hero.scss";
 
+import HeroRight from "../../assets/images/hero-right.png";
+
 const Hero = () => {
   return (
     <div className="hero">
@@ -21,7 +23,13 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="hero__topRight">Top Right</div>
+        <div className="hero__topRight">
+          <img src={HeroRight} alt="" />
+          <div className="hero__topRightResume">
+            <p>Check out my resume!</p>
+            <a href="#">My Resume</a>
+          </div>
+        </div>
       </div>
       <div className="hero__bottom">
         <div className="hero__bottomLeft">
