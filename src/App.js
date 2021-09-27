@@ -3,6 +3,7 @@ import './App.css';
 // import Nav from './components/Nav/Nav';
 import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
+import WorkPage from './pages/WorkPage/WorkPage';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Route path="/" exact component={HomePage} />
         <Route path="/about" component={AboutPage} />
+        <Route path="/work" component={WorkPage} />
       </div>
     </Router>
   );

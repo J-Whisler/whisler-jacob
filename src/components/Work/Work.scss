@@ -1,0 +1,25 @@
+.work {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .work__top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 7vh;
+        h3 {
+            color: var(--accent-color);
+            font-family: var(--primary-font);
+            font-size: 3vw;
+            letter-spacing: 0.5vw;
+            text-decoration: underline;
+        }
+    }
+    .work__bottom {
+        // border: 2px solid blue;
+        display: flex;
+        justify-content: space-around;
+        
+      
+    }
+}
