@@ -5,40 +5,51 @@ export const workProjects = [
         id: "1",
         letter: "S",
         title: "Sunny",
+        icon : "fas fa-sun",
         color: "#BA5023",
         backgroundColor: "#000000",
         gif: "https://giphy.com/embed/3WYiNa7vx0w19jGQKz",
         description: "is a basic weather application that gives users the current weather conditions in their searched city.",
+        hoverState: false,
 
     },
     {
         id: "2",
         letter: "R",
-        title: "Rock, Paper, Scissors",
+        title: "RPS",
+        icon : "fas fa-gamepad",
         color: "#7EC8E3",
         backgroundColor: "#050A30",
         gif: "https://giphy.com/embed/OCR5FpTNg4iizSCWfG",
-        description: "is my take on the classic game 'Rock, Paper, Scissors'.  It allows users to play against the computer and tracks the users score."
+        description: "is my take on the classic game 'Rock, Paper, Scissors'.  It allows users to play against the computer and tracks the users score.",
+        hoverState: false,
 
     },
     {
         id: "3",
-        letter: "D",
-        title: "Discover",
-        color: "#024F97",
-        backgroundColor: "#FDF3F4",
-        gif: "https://giphy.com/embed/BC4xNxQop600BUt8YU",
-        description: "is a landing page that I created for fake Icelandic tourism company.  It is inspired by my trip there in 2019."
+        letter: "N",
+        title: "Netflix",
+        icon : "fas fa-tv",
+        color: "#E50914",
+        backgroundColor: "#000000",
+        gif: "https://giphy.com/embed/oU4N9ODTfjLr0UeKQI",
+        description: "is my recreation of the Netflix landing page.  It features a similar landing page and a working tab section to display different information about their products and services.",
+        hoverState: false,
+
 
     },
     {
         id: "4",
-        letter: "N",
-        title: "Netflix",
-        color: "#E50914",
-        backgroundColor: "#000000",
-        gif: "https://giphy.com/embed/oU4N9ODTfjLr0UeKQI",
-        description: "is my recreation of the Netflix landing page.  It features a similar landing page and a working tab section to display different information about their products and services."
+        letter: "D",
+        title: "Discover",
+        icon : "fas fa-route",
+        color: "#FDF3F4",
+        backgroundColor: "#024F97" ,
+        gif: "https://giphy.com/embed/BC4xNxQop600BUt8YU",
+        description: "is a landing page that I created for fake Icelandic tourism company.  It is inspired by my trip there in 2019.",
+        hoverState: false,
 
-    }
+
+    },
+   
 ]
